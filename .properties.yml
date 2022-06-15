@@ -1,0 +1,11 @@
+project_name: onboarding_marcin_dyjas
+confluence: 
+repository: https://github.com/workivate/onboarding-marcin-dyjas.git
+maintainer: mdyjasLifeWorks
+sentry_dsn_integration: 
+sentry_dsn_integration_au: 
+sentry_dsn_live: 
+sentry_dsn_singletenant_test: 
+sentry_dsn_tdbank: 
+sentry_dsn_test: 
+sentry_dsn_test_au: 
