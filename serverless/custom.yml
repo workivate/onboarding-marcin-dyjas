@@ -43,3 +43,5 @@ prune:
   automatic: true
   includeLayers: true
   number: 3
+
+aws_account_name: lw-backend-integration

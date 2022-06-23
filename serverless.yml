@@ -8,6 +8,7 @@ package:
     - "onboarding_marcin_dyjas/**"
 provider:
   name: aws
+  region: ${opt:region}
   runtime: python3.9
   apiName: ${self:service}
   stage: ${self:custom.environment}

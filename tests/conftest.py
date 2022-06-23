@@ -9,6 +9,7 @@ TestClient.__test__ = False
 @pytest.fixture
 def test_client() -> TestClient:
     app.use("onboarding_marcin_dyjas.healthcheck.handlers")
+    app.use("onboarding_marcin_dyjas.onboarding.handlers")
 
     client = TestClient(app)
     return client

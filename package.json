@@ -1,0 +1,16 @@
+{
+  "name": "onboarding-marcin-dyjas",
+  "version": "1.0.0",
+  "dependencies": {
+    "serverless": "^3.15.2"
+  },
+  "devDependencies": {
+    "serverless-aws-resource-names": "^0.1.2",
+    "serverless-domain-manager": "^6.0.3",
+    "serverless-kms-grants": "^1.1.0",
+    "serverless-prune-plugin": "^2.0.1",
+    "serverless-python-requirements": "^5.4.0",
+    "serverless-step-functions": "^3.7.0",
+    "serverless-vpc-discovery": "^4.0.2"
+  }
+}

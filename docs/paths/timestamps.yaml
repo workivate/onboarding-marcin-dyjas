@@ -1,0 +1,10 @@
+openapi: 3.0.3
+
+pathInfo:
+  get:
+    summary: Timestamps test endpoint
+    tags:
+      - General
+    responses:
+        '200':
+          description: Onboarding timestamps test endpoint

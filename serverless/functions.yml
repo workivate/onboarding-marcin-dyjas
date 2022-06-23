@@ -14,6 +14,14 @@ onboarding:
         path: /onboarding/{name}
         method: get
 
+timestamps:
+  description: Test timestamps endpoint
+  handler: onboarding_marcin_dyjas.onboarding.handlers.get_timestamps
+  events:
+    - http:
+        path: /timestamps
+        method: get
+
 status:
   description: Check application's health status
   handler: onboarding_marcin_dyjas.healthcheck.handlers.get_status

@@ -18,3 +18,5 @@ paths:
     $ref: "paths/ping.yaml#/pathInfo"
   /status:
     $ref: "paths/status.yaml#/pathInfo"
+  /onboarding/{name}:
+    $ref: "paths/onboarding.yaml#/pathInfo"
