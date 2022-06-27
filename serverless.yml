@@ -34,6 +34,17 @@ provider:
             - lambda:InvokeFunction
           Resource:
             - Fn::Sub: arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:${self:custom.serverless-aws-resource-names.variables.functionPrefix}_*
+        - Effect: 'Allow'
+          Action:
+            - 'dynamodb:BatchWriteItem'
+            - 'dynamodb:Scan'
+            - 'dynamodb:GetItem'
+            - 'dynamodb:PutItem'
+            - 'dynamodb:UpdateItem'
+          Resource:
+            Fn::GetAtt:
+              - timestampTable
+              - Arn
   environment: ${file(./serverless/environments/${opt:stage, 'integration'}.yml)}
   tags:
     service: ${self:service}
@@ -60,3 +71,4 @@ plugins:
 custom: ${file(./serverless/custom.yml)}
 
 functions: ${file(./serverless/functions.yml)}
+resources: ${file(./serverless/resources.yml)}

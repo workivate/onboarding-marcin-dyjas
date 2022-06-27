@@ -20,3 +20,5 @@ paths:
     $ref: "paths/status.yaml#/pathInfo"
   /onboarding/{name}:
     $ref: "paths/onboarding.yaml#/pathInfo"
+  /timestamps:
+    $ref: "paths/timestamps.yaml#/pathInfo"

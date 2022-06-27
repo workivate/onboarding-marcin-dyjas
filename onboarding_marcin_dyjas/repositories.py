@@ -1,6 +1,5 @@
-
-
 from kink import inject
+from mypy_boto3_dynamodb.type_defs import ScanOutputTableTypeDef
 from mypy_boto3_dynamodb.service_resource import Table
 
 

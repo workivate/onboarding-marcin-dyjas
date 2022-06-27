@@ -23,5 +23,5 @@ def options_status(request: HttpRequest) -> HttpResponse:
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Headers": "accept, Authorization",
             "Access-Control-Allow-Methods": "OPTIONS, GET",
-        }
+        },
     )

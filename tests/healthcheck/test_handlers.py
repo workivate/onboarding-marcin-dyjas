@@ -15,12 +15,8 @@ def test_options_status_endpoint(test_client: TestClient) -> None:
     assert response.headers["content-type"] == "application/json"  # nosec B101
     assert response.headers["access-control-allow-origin"] == "*"  # nosec B101
     assert response.headers["access-control-allow-credentials"] == "true"  # nosec B101
-    assert (  # nosec B101
-        response.headers["access-control-allow-headers"] == "accept, Authorization"
-    )
-    assert (  # nosec B101
-        response.headers["access-control-allow-methods"] == "OPTIONS, GET"
-    )
+    assert response.headers["access-control-allow-headers"] == "accept, Authorization"  # nosec B101
+    assert response.headers["access-control-allow-methods"] == "OPTIONS, GET"  # nosec B101
 
     assert "x-request-id" in response.headers  # nosec B101
     assert "x-causation-id" in response.headers  # nosec B101
