@@ -1,7 +1,7 @@
 openapi: 3.0.3
 
 pathInfo:
-  get:
+  post:
     summary: Timestamps test endpoint
     tags:
       - General

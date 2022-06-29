@@ -16,11 +16,11 @@ onboarding:
 
 timestamps:
   description: Test timestamps endpoint
-  handler: onboarding_marcin_dyjas.onboarding.handlers.get_timestamps
+  handler: onboarding_marcin_dyjas.onboarding.handlers.post_timestamps
   events:
     - http:
         path: /timestamps
-        method: get
+        method: post
 
 status:
   description: Check application's health status
